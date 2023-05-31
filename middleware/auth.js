@@ -71,7 +71,3 @@ exports.isAdmin = (req, res, next) => {
    }
 }
 
-  // "name": "Code Editer",
-  // "email": "visualStudio123.vk@gmail.com",
-  // "password": "123456",
-  // "role": "Student"
