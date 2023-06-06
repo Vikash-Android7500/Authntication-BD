@@ -95,7 +95,7 @@ exports.login = async (req, res) => {
 
        //options
        const options = {
-         expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+         expires: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
          httpOnly: true,
        };
 
@@ -110,7 +110,7 @@ exports.login = async (req, res) => {
          user.token = token;
          user.password = undefined;
 
-         res.cookie("VK-cookie", token, options).status(200).json({
+         res.cookie("VK-cookie ", token, options).status(200).json({
            success: true,
            token,
            user,
